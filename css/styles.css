@@ -40,11 +40,8 @@ hr{
 .top-container {
   animation: night 20s linear infinite;
   animation-delay: 8s;
-}
-
-.top-container {
-  height: 100vh;
   background-color: #d2fafb;
+  height: 100vh;
 }
 
 .box-header {
@@ -160,6 +157,9 @@ hr{
 }
 
 /***********MIDDLE CONTAINER***************/
+.title{
+  padding:1%;
+}
 .skill-row {
   width: 50%;
   margin: 50px auto;
@@ -205,7 +205,9 @@ hr{
 /**********BOTTOM CONTAINER *************/
 .bottom-container{
   height:100px;
-background-color: #66BFBF;
+  animation: night 20s linear infinite;
+  animation-delay: 8s;
+  background-color: #d2fafb;
 }
 .footer-link{
   color: #11999E;
@@ -213,10 +215,13 @@ background-color: #66BFBF;
   text-decoration: none;
 }
 .link-container{
+  padding-bottom:1%;
   position:relative;
   top:20px;
 }
-
+.title-contact-me{
+  padding:2%;
+}
 
 
 /***********************ID SELECTORS*************************/
@@ -335,4 +340,60 @@ background-color: #66BFBF;
     transform: rotate(360deg);
   }
 }
-/* Breakpoints */
+/* Breakpoints - Mobile responsive */
+
+
+/* Extra small devices - Portrait phones (<544px) */
+@media screen and (max-width:544px){
+
+  
+  
+}
+/*Small devices - Landscape phones (≥544px - <768px)*/
+@media (min-width:544px) and (max-width:768px){
+
+  .sun_motion {
+
+    margin-left: 15%;
+    margin-top: 250px;
+    transform-origin: 450% center;
+
+  }
+  
+  .moon_motion {
+    margin-left: 20%;
+    margin-top: 250px;
+    transform-origin: 450% center;
+  }
+}
+/*Medium devices -Tablets (≥768px - <992px) */
+@media(min-width:768px) and (max-width:992px){
+  .sun_motion {
+    margin-left: 20%;
+    margin-top: 250px;
+    transform-origin: 450% center;
+  }
+  
+  .moon_motion {
+    margin-left: 15%;
+    margin-top: 250px;
+    transform-origin: 450% center;
+  }
+}
+/*Large devices - Desktops (≥992px - <1200px)*/
+@media(min-width:992px) and (max-width:1200px){
+  .sun_motion {
+    margin-left: 20%;
+    margin-top: 250px;
+    transform-origin: 450% center;
+  }
+  
+  .moon_motion {
+    margin-left: 15%;
+    margin-top: 250px;
+    transform-origin: 450% center;
+  }
+}
+/*Extra large devices - Desktops (≥1200px)*/
+@media(min-width:992px) and (max-width:1200ox){
+}
