@@ -35,7 +35,7 @@ hr{
   border-style: dotted;
   border-width: 5px 0 0 0;
   width:40px;
-  border-color:#EAF6F6;
+  border-color:rgb(85, 97, 97);
   padding:2%;
 }
 /***********************CLASS SELECTORS*************************/
@@ -70,7 +70,7 @@ hr{
   100%{color:blue;}
 }
 .middle-container{
-  padding-top:2%;
+  padding-top:5%;
 }
 
 .middle-header {
@@ -211,6 +211,10 @@ a.footer-link{
   padding:20px;
   text-decoration: none;
   
+}
+.footer-link:hover{
+  color:#666;
+  transition:1s;
 }
 .link-container{
   padding-bottom:1%;
