@@ -3,6 +3,10 @@ body {
   margin: 0;
   text-align: center;
   font-family: 'Source Sans Pro', sans-serif;
+
+  animation: night 20s linear infinite;
+  animation-delay: 8s;
+  background-color: #d2fafb;
 }
 
 h1 {
@@ -38,9 +42,6 @@ hr{
 .container {}
 
 .top-container {
-  animation: night 20s linear infinite;
-  animation-delay: 8s;
-  background-color: #d2fafb;
   height: 100vh;
 }
 
@@ -70,9 +71,6 @@ hr{
 }
 .middle-container{
   padding-top:2%;
-  background-color: #d2fafb;
-  animation: night 20s linear infinite;
-  animation-delay: 8s;
 }
 
 .middle-header {
@@ -190,6 +188,7 @@ hr{
   background-color:#00CED1;
   color:white;
   padding:10px 20px 10px 20px;
+  margin:1%;
   text-decoration:none;
   font-family:sans-serif;
   border-radius:10px;
@@ -205,14 +204,13 @@ hr{
 /**********BOTTOM CONTAINER *************/
 .bottom-container{
   height:100px;
-  animation: night 20s linear infinite;
-  animation-delay: 8s;
-  background-color: #d2fafb;
+
 }
-.footer-link{
+a.footer-link{
   color: #11999E;
   padding:20px;
   text-decoration: none;
+  
 }
 .link-container{
   padding-bottom:1%;
@@ -229,36 +227,38 @@ hr{
 /* ANIMATII HEADER */
 @keyframes night {
   0% {
-    background-color: #d2fafb;
+    background-color:#d2fafb;
+
   }
 
   5% {
-    background-color: #f880b0;
+    background-color:#f880b0;
   }
 
   10% {
-    background-color: #ff4d00;
+    background-color:#ff4d00;
   }
 
   15% {
-    background-color: #203060;
+    background-color:#203060;
   }
 
-  50% {
-    background-color: #885090;
+  40% {
+    background-color:#885090;
   }
-
-  55% {
-    background-color: #ff4d00;
+  42% {
+    background-color:#ff4d00;
+  }
+  46%{
   }
 
   60% {
-    background-color: #f880b0;
+    background-color:#f880b0;
   }
 
   65% {
-    background-color: #d2fafb;
-    ;
+    background-color:#d2fafb;
+    
   }
 
   100% {
