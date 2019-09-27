@@ -1,0 +1,338 @@
+/***********************TAG SELECTORS*************************/
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #56B6AF;
+}
+h3{
+  color:#56B6AF;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+h1, h2 {
+  font-family: 'Dancing Script', cursive;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+hr{
+  border-style: dotted;
+  border-width: 5px 0 0 0;
+  width:40px;
+  border-color:#EAF6F6;
+  padding:2%;
+}
+/***********************CLASS SELECTORS*************************/
+.container {}
+
+.top-container {
+  animation: night 20s linear infinite;
+  animation-delay: 8s;
+}
+
+.top-container {
+  height: 100vh;
+  background-color: #d2fafb;
+}
+
+.box-header {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.container {
+  width: auto;
+  height: 5vh;
+}
+
+.pro {
+  color: black;
+  font-family: 'Dancing Script';
+  font-weight: bold;
+  font-size:3rem;
+  line-height: 2;
+  animation: cycle 20s linear infinite;
+}
+
+@keyframes cycle {
+  0%{color:blue;}
+  50%{color:gold;}
+  100%{color:blue;}
+}
+.middle-container{
+  padding-top:2%;
+  background-color: #d2fafb;
+  animation: night 20s linear infinite;
+  animation-delay: 8s;
+}
+
+.middle-header {
+  height: 35vh;
+}
+
+.bottom-header {
+  height: 55vh;
+  text-align: center;
+}
+
+.sun_motion {
+  width: 65px;
+  height: 65px;
+  margin-left: 35%;
+  margin-top: 250px;
+  transform-origin: 450% center;
+  position: absolute;
+  animation: rotate-sun 20s linear infinite;
+  background: url(../images/sunny.png);
+  z-index: 0;
+}
+
+.moon_motion {
+  width: 64px;
+  height: 64px;
+  opacity: 0;
+  margin-left: 35%;
+  margin-top: 250px;
+  transform-origin: 500% center;
+  position: absolute;
+  animation: rotate-moon 20s linear infinite;
+  background: url(../images/moon.png);
+  animation-delay: 8s;
+}
+
+.top-cloud {
+  position: relative;
+  margin-left: 450px;
+  animation-name: top-cloud;
+  animation-duration: 10s;
+}
+
+.sun_motion:before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  animation: rotate 3s linear reverse infinite;
+}
+
+.bottom-cloud {
+  position: relative;
+  right: 200px;
+  animation-name: bottom-cloud;
+  animation-duration: 10s;
+}
+
+
+.mountain{
+  position: absolute;
+   bottom:0;
+   left: 50%;
+   width: 500px;
+   height: 500px;
+   margin-top: -250px; /* Half the height */
+   margin-left: -250px; /* Half the width */
+}
+
+.profile {
+  text-align:center;
+}
+
+.profile img {
+  transform: rotate(180deg);
+  width: 100px;
+  height: 100px;
+  border-radius: 60px;
+}
+.skills{
+  text-align:center;
+}
+
+/***********MIDDLE CONTAINER***************/
+.skill-row {
+  width: 50%;
+  margin: 50px auto;
+  line-height: 2;
+  text-align: left;
+}
+
+
+
+.computer-img {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+  border-radius: 100px;;
+}
+
+.chillies-img {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+.contact-me {
+  margin:0 auto;
+  padding:3% 0%;
+}
+
+.btn{
+  background-color:#00CED1;
+  color:white;
+  padding:10px 20px 10px 20px;
+  text-decoration:none;
+  font-family:sans-serif;
+  border-radius:10px;
+}
+.btn:hover{
+    transition: 0.5s;
+    padding:15px 25px 15px 25px;
+    border:solid;
+    border:2px 1px 2px 1px;
+
+}
+
+/**********BOTTOM CONTAINER *************/
+.bottom-container{
+  height:100px;
+background-color: #66BFBF;
+}
+.footer-link{
+  color: #11999E;
+  padding:20px;
+  text-decoration: none;
+}
+.link-container{
+  position:relative;
+  top:20px;
+}
+
+
+
+/***********************ID SELECTORS*************************/
+/***********************COD ANIMATIE*************************/
+/* ANIMATII HEADER */
+@keyframes night {
+  0% {
+    background-color: #d2fafb;
+  }
+
+  5% {
+    background-color: #f880b0;
+  }
+
+  10% {
+    background-color: #ff4d00;
+  }
+
+  15% {
+    background-color: #203060;
+  }
+
+  50% {
+    background-color: #885090;
+  }
+
+  55% {
+    background-color: #ff4d00;
+  }
+
+  60% {
+    background-color: #f880b0;
+  }
+
+  65% {
+    background-color: #d2fafb;
+    ;
+  }
+
+  100% {
+    background-color: #d2fafb;
+  }
+}
+
+@keyframes rotate-moon {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bottom-cloud {
+  from {
+    margin-right: 100px;
+  }
+
+  to {
+    margin-left: 100px;
+  }
+}
+
+@keyframes top-cloud {
+  from {
+    margin-left: 450px;
+  }
+
+  to {
+    margin-right: 200px;
+  }
+}
+
+@keyframes rotate-sun {
+
+  /*  100% {
+    transform: rotate(360deg);
+  }
+  */
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  55% {
+    opacity: 0;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+}
+/* Breakpoints */
